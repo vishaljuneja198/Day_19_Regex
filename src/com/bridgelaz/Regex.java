@@ -16,5 +16,14 @@ public class Regex {
         if (matcher.matches() == false) {
             System.out.println("Entered Name does not follow the convention");
         }
+
+        System.out.println("Enter Last Name");
+        String lastName = userInput.nextLine();
+
+        matcher = pattern.matcher(lastName);
+
+        if (matcher.matches() == false) {
+            System.out.println("Entered Name does not follow the convention");
+        }
     }
 }
